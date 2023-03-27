@@ -1,0 +1,18 @@
+.alt-content {
+    display: flex;
+    gap: 1rem;
+    padding: .1rem 1rem;
+    align-items: center;
+    flex-direction: row;
+    background: rgba(0, 0, 0, .05);
+    border-radius: .6rem;
+    cursor: pointer;
+}
+
+.alt-content p {
+    font-size: .8rem;
+}
+
+.alt-content .icon {
+    font-size: .95rem;
+}
