@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;600&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@400;500;700&display=swap');
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-.signinpage {
+.page {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,16 +12,16 @@ body {
     width: 100vw;
 }
 
-.signinsection-heading h1 {
+.section-heading h1 {
     font-weight: 700;
     color: rgba(0, 0, 0, 0.7);
 }
 
-.signinsection-heading p {
+.section-heading p {
     font-size: .8rem;
 }
 
-input {
+.registration-input {
     border-color: white;
     height: 1px;
     width: 80%;
@@ -34,7 +29,7 @@ input {
     padding: 1.5em;
 }
 
-.signinform-cover {
+.form-cover {
     width: 30em;
     display: flex;
     flex-direction: column;
@@ -42,32 +37,33 @@ input {
     gap: 1rem;
 }
 
-.signintop-section {
+.top-section {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     gap: 3rem;
+    
 }
 
-.signindivider {
+.divider {
     display: flex;
     align-items: center;
 }
 
-.signindivider hr {
+.divider hr {
     width: 8rem;
     margin: 0rem 1rem;
 }
 
-.signinform-input {
+.form-input {
     width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.signinform-input .icon {
+.form-input .icon {
     position: absolute;
     left: 12%;
     top: 50%;
@@ -76,7 +72,7 @@ input {
     font-size: .95rem;
 }
 
-.signinform-input .visibility {
+.form-input .visibility {
     position: absolute;
     right: 13%;
     top: 50%;
@@ -89,20 +85,20 @@ input {
     font-size: .8rem;
 }
 
-.signinform-input input {
+.form-input input {
     padding-left: 2.2rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     outline: none;
 }
 
-.signinsection-heading {
+.section-heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .7rem;
 }
 
-.signinalt-login {
+.alt-login {
     width: 80%;
     height: 3em;
     display: flex;
@@ -110,7 +106,7 @@ input {
     justify-content: center;
 }
 
-.signin {
+.signup {
     background-color: #2979FF;
     border: none;
     width: 80%;
@@ -120,12 +116,12 @@ input {
     cursor: pointer;
 }
 
-.signinmethod {
+.method {
     display: flex;
    
 }
 
-.signinmethod button {
+.method button {
     border: none;
     outline: none;
     background: none;
@@ -133,7 +129,7 @@ input {
     font-weight: 700;
 }
 
-.signinmethod p {
+.method p {
     font-weight: 600;
     color: rgba(0, 0, 0, 0.7);
 }
@@ -146,12 +142,6 @@ input {
     gap: 1rem;
 }
 
-.signinforgot  p {
-    font-size: .8rem;
+.reg {
     cursor: pointer;
 }
-
-.signinreg {
-    cursor: pointer;
-}
-

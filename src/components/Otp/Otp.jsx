@@ -30,7 +30,7 @@ function Otp() {
   const { id } = useParams();
 
   async function sendOtp() {
-    const { data } = await axios.post(`http://localhost:3001/otp/${id}`,{});
+    const { data } = await axios.post(`http://localhost:3001/api/otp/${id}`,{});
     localStorage.setItem("otp", "true");
   }
 
@@ -74,7 +74,7 @@ function Otp() {
   async function onSubmit(userData) {
     try {
       const otp = userData.otp1 + userData.otp2 + userData.otp3 + userData.otp4;
-      const { data } = await axios.post("http://localhost:3001/check-otp", {
+      const { data } = await axios.post("http://localhost:3001/api/check-otp", {
         otp: otp,
         userId: id
       });
@@ -98,7 +98,7 @@ function Otp() {
 
         <div className="otp">
           <div className="otp-input">
-            <input
+            <input className="otp-input"
               {...register("otp1", {
                 required: {
                   value: true,
@@ -111,7 +111,7 @@ function Otp() {
           </div>
 
           <div className="otp-input">
-            <input
+            <input className="otp-input"
               {...register("otp2", {
                 required: {
                   value: true,
@@ -123,7 +123,7 @@ function Otp() {
           </div>
 
           <div className="otp-input">
-            <input
+            <input className="otp-input"
               {...register("otp3", {
                 required: {
                   value: true,
@@ -135,7 +135,7 @@ function Otp() {
           </div>
 
           <div className="otp-input">
-            <input
+            <input className="otp-input"
               {...register("otp4", {
                 required: {
                   value: true,

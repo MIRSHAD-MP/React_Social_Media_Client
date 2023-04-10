@@ -1,0 +1,28 @@
+.aside-icon {
+  padding-left: 30px;
+  height: 40px;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 20px;
+  color: #36454F;
+  cursor: pointer;
+}
+
+.aside-icon:hover {
+  background-color: #36454F;
+  color: white;
+  border-radius: 9px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.aside-icon .icon{
+  font-size: 20px;
+}
+
+.aside-icon p {
+    padding-left: 20px;
+    font-size: 15px;
+}

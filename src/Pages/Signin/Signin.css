@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;600&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@400;500;700&display=swap');
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-.page {
+.signinpage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,16 +12,16 @@ body {
     width: 100vw;
 }
 
-.section-heading h1 {
+.signinsection-heading h1 {
     font-weight: 700;
     color: rgba(0, 0, 0, 0.7);
 }
 
-.section-heading p {
+.signinsection-heading p {
     font-size: .8rem;
 }
 
-input {
+.signin-input {
     border-color: white;
     height: 1px;
     width: 80%;
@@ -34,7 +29,7 @@ input {
     padding: 1.5em;
 }
 
-.form-cover {
+.signinform-cover {
     width: 30em;
     display: flex;
     flex-direction: column;
@@ -42,33 +37,32 @@ input {
     gap: 1rem;
 }
 
-.top-section {
+.signintop-section {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     gap: 3rem;
-    
 }
 
-.divider {
+.signindivider {
     display: flex;
     align-items: center;
 }
 
-.divider hr {
+.signindivider hr {
     width: 8rem;
     margin: 0rem 1rem;
 }
 
-.form-input {
+.signinform-input {
     width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.form-input .icon {
+.signinform-input .icon {
     position: absolute;
     left: 12%;
     top: 50%;
@@ -77,7 +71,7 @@ input {
     font-size: .95rem;
 }
 
-.form-input .visibility {
+.signinform-input .visibility {
     position: absolute;
     right: 13%;
     top: 50%;
@@ -90,20 +84,20 @@ input {
     font-size: .8rem;
 }
 
-.form-input input {
+.signinform-input input {
     padding-left: 2.2rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     outline: none;
 }
 
-.section-heading {
+.signinsection-heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .7rem;
 }
 
-.alt-login {
+.signinalt-login {
     width: 80%;
     height: 3em;
     display: flex;
@@ -111,7 +105,7 @@ input {
     justify-content: center;
 }
 
-.signup {
+.signin {
     background-color: #2979FF;
     border: none;
     width: 80%;
@@ -121,12 +115,12 @@ input {
     cursor: pointer;
 }
 
-.method {
+.signinmethod {
     display: flex;
    
 }
 
-.method button {
+.signinmethod button {
     border: none;
     outline: none;
     background: none;
@@ -134,7 +128,7 @@ input {
     font-weight: 700;
 }
 
-.method p {
+.signinmethod p {
     font-weight: 600;
     color: rgba(0, 0, 0, 0.7);
 }
@@ -147,6 +141,12 @@ input {
     gap: 1rem;
 }
 
-.reg {
+.signinforgot  p {
+    font-size: .8rem;
     cursor: pointer;
 }
+
+.signinreg {
+    cursor: pointer;
+}
+

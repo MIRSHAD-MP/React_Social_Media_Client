@@ -1,9 +1,11 @@
+import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Registration from "./components/Registration/Registration";
-import Signin from "./components/Signin/Signin";
+import Registration from "./Pages/Registration/Registration";
+import Signin from "./Pages/Signin/Signin";
 import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
 import Otp from "./components/Otp/Otp";
 import NewPassword from "./components/NewPassword/NewPassword";
+import Home from "./Scenes/Home";
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />}/>
         <Route path="/otp/:id" element={<Otp />}/>
         <Route path="/new-password/:id" element={<NewPassword />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
       </BrowserRouter>
     </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Registration.css";
-import AltLogin from "../AltLogin/AltLogin";
+import AltLogin from "../../components/AltLogin/AltLogin";
 import GoogleIcon from "@mui/icons-material/Google";
 import AppleIcon from "@mui/icons-material/Apple";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
@@ -50,7 +50,7 @@ function Registration() {
 
   async function onSubmit(userData) {
     try {
-      const { data } = await axios.post("http://localhost:3001", {
+      const { data } = await axios.post("http://localhost:3001/api/", {
         ...userData,
       });
       setSuccess(data.message)
@@ -84,7 +84,7 @@ function Registration() {
 
         <div className="form-input">
           <AlternateEmailIcon className="icon" />
-          <input
+          <input className="registration-input"
             {...register("email", {
               required: {
                 value: true,
@@ -106,7 +106,7 @@ function Registration() {
 
         <div className="form-input">
           <SentimentSatisfiedIcon className="icon" />
-          <input
+          <input className="registration-input"
             {...register("name", {
               required: { value: true, message: "Name is required" },
               minLength: { value: 3, message: "Name should have 3 characters" },
@@ -121,7 +121,7 @@ function Registration() {
 
         <div className="form-input">
           <LockIcon className="icon" />
-          <input
+          <input className="registration-input"
             {...register("password", {
               required: { value: true, message: "Password is required" },
               minLength: {
@@ -146,7 +146,7 @@ function Registration() {
 
         <div className="form-input">
           <DateRangeIcon className="icon" />
-          <input
+          <input className="registration-input"
             {...register("dateOfBirth", {
               required: { value: true, message: "Date of birth is required" },
             })}

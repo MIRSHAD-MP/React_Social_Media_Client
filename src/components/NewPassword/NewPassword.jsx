@@ -45,7 +45,7 @@ function NewPassword() {
 
   async function onSubmit(userData) {
     try {
-      const { data } = await axios.put(`http://localhost:3001/new-password/${id}`, {
+      const { data } = await axios.put(`http://localhost:3001/api/new-password/${id}`, {
         ...userData,
       });
       setSuccess(data.message);
@@ -71,7 +71,7 @@ function NewPassword() {
 
         <div className="form-input">
           <LockIcon className="icon" />
-          <input
+          <input className="new-input"
             {...register("password", {
               required: { value: true, message: "Password is required" },
               minLength: {
@@ -91,7 +91,7 @@ function NewPassword() {
 
         <div className="form-input">
           <LockIcon className="icon" />
-          <input
+          <input className="new-input"
             {...register("confirmPassword", {
               required: { value: true, message: "Password is required" },
               minLength: {

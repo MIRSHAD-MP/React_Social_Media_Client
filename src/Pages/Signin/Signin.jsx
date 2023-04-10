@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Signin.css"
-import AltLogin from "../AltLogin/AltLogin";
+import AltLogin from "../../components/AltLogin/AltLogin";
 import GoogleIcon from "@mui/icons-material/Google";
 import AppleIcon from "@mui/icons-material/Apple";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
@@ -48,11 +48,12 @@ function Signin() {
 
   async function onSubmit(userData) {
     try {
-     const {data} =  await axios.post("http://localhost:3001/login", {
+     const {data} =  await axios.post("http://localhost:3001/api/login", {
       ...userData
       })
       setSuccess(data.message)
       setOpen(true)
+      navigate("/home")
     } catch (error) {
       setError(error.response.data.message)
       setClose(true)
@@ -81,7 +82,7 @@ function Signin() {
 
         <div className="signinform-input">
           <AlternateEmailIcon className="icon" />
-          <input
+          <input className="signin-input"
             {...register("email", {
               required: {
                 value: true,
@@ -103,7 +104,7 @@ function Signin() {
 
         <div className="form-input">
           <LockIcon className="icon" />
-          <input
+          <input className="signin-input"
             {...register("password", {
               required: { value: true, message: "Password is required" },
               minLength: {

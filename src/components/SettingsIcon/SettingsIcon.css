@@ -1,0 +1,33 @@
+.settings-icon {
+  padding-top: 21px;
+  margin-top: 10px;
+  height: 30px;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 15px;
+  color: #36454F;
+  cursor: pointer;
+}
+
+.settings-icon {
+  position: relative;
+}
+
+.settings-icon::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0,.15);
+  bottom: -1rem;
+}
+
+.settings-icon .icon{
+  font-size: 20px;
+}
+
+.settings-icon p {
+    padding-left: 15px;
+}

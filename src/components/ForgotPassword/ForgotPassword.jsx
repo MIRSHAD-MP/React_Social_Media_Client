@@ -36,7 +36,7 @@ function ForgotPassword() {
 
   async function onSubmit(userData) {
     try {
-     const {data} =  await axios.post("http://localhost:3001/forgot-password", {
+     const {data} =  await axios.post("http://localhost:3001/api/forgot-password", {
       ...userData
       })
       setSuccess(data.message)
@@ -60,7 +60,7 @@ function ForgotPassword() {
 
         <div className="forgotform-input">
           <AlternateEmailIcon className="icon" />
-          <input
+          <input className="forgot-input"
             {...register("email", {
               required: {
                 value: true,
