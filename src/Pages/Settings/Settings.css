@@ -1,28 +1,28 @@
 .main {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    padding-top: 80px;
-    padding-left: 45px;
-    padding-right: 25px;
-    background-color: aliceblue;
-    height: 100vh;
-}
-
-.form-input {
-    padding-left: 20px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  padding-top: 80px;
+  padding-left: 45px;
+  padding-right: 25px;
+  background-color: aliceblue;
+  height: 100vh;
 }
 
 .section-1 {
-    position: relative;
-    background-color: white;
+  position: relative;
+  background-color: white;
 }
 
-.section-1::after{
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 100%;
-    background: rgba(0, 0, 0,.09);
-    right: 0;
-    top: 0;
+.section-1::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.09);
+  right: 0;
+  top: 0;
+}
+
+.section-2 {
+  background-color: white;
 }

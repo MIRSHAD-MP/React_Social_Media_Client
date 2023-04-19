@@ -1,4 +1,4 @@
-import React from "react";
+  import React from "react";
 import "./Blocking.css";
 import SearchIcon from "@mui/icons-material/SearchRounded";
 import BlockUser from "../BlockUser/BlockUser";

@@ -24,6 +24,14 @@
   bottom: -1rem;
 }
 
+.settings-icon:hover {
+  font-weight: 600;
+}
+
+.settings-icon-active {
+  font-weight: 600;
+}
+
 .settings-icon .icon{
   font-size: 20px;
 }

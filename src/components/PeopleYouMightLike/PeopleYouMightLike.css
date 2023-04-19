@@ -1,0 +1,71 @@
+.followers-profiles {
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .followers-accounts {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .followers-accounts img {
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+  
+  .followers-details {
+    margin-left: 15px;
+  }
+  
+  .followers-name {
+    font-size: medium;
+    font-weight: 500;
+    color: #36454f;
+  }
+  
+  .followers-position {
+    font-size: 12px;
+    color: #9c9c9d;
+    padding-bottom: 10px;
+  }
+  
+  .followers-details .followers-icon {
+    margin-left: 10px;
+    height: 17px;
+    width: 17px;
+  }
+  
+  .followers-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .followers-buttons .ignore-button{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    border: 1px solid #9c9c9d;
+    color: #9c9c9d;
+    font-weight: 600;
+    width: 100px;
+    height: 35px;
+    border-radius: 7px;
+  }
+  
+  .followers-buttons .follow-button {
+      cursor: pointer;
+      border: none;
+      background-color: #2872f4;
+      color: white;
+      font-weight: 500;
+      width: 100px;
+      height: 35px;
+      border-radius: 7px;
+  }

@@ -1,0 +1,17 @@
+.intro-details {
+  height: 26px;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  color: #36454F;
+}
+
+.intro-details .intro-icon{
+    font-size: 15px;
+  }
+  
+  .intro-details p {
+      padding-left: 15px;
+      font-size: 12px;
+      font-weight: 500;
+  }

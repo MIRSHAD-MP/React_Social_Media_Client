@@ -1,0 +1,354 @@
+.profile {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 60px;
+  padding-right: 25px;
+  padding-left: 20px;
+  height: 100vh;
+  background-color: white;
+}
+
+.cover {
+  position: relative;
+}
+
+.cover-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.profile-pic img{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  left: 20px;
+  bottom: -10px;
+  border: 3px solid white;
+}
+
+.profile-pic-upload .profile-upload-icon {
+  position: absolute;
+  color: #36454f;
+  background-color: white;
+  width: 20px; 
+  height: 20px;
+  left: 95px;
+  bottom: -3px; 
+  border-radius: 50px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.edit-cover-photo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background: white;
+  color: #36454f;
+  bottom: 30px;
+  right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+  border-radius: 7px;
+}
+
+.edit-cover-photo .cover-upload-icon {
+  width: 18px; 
+  height: 18px;  
+}
+
+.edit-cover-photo p {
+  font-size: 10px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.profile-user-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.p-name {
+  color: #36454f;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.p-job {
+  color: #9c9c9d;
+  font-size: small;
+}
+
+.profile-button button {
+  cursor: pointer;
+  border: none;
+  font-size: 11px;
+  font-weight: 550;
+  color: #36454f;
+  background-color: #f0f0f4;
+  width: 100px;
+  height: 32px;
+  border-radius: 7px;
+}
+
+.profile-section-2 {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  background-color:  aliceblue;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.intro-left-section {
+  background-color: white;
+  margin-right: 20px;
+  border-radius: 12px;
+  padding-left: 20px;
+}
+
+.intro-name p {
+  font-size: medium;
+  font-weight: 650;
+  color: #36454f;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.intro-edit button {
+  cursor: pointer;
+  border: none;
+  background-color: #f4f4f4;
+  color: #36454f;
+  font-size: small;
+  font-weight: 550;
+  width: 90%;
+  height: 35px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.intro-middle-section {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  margin-right: 20px;
+}
+
+.intro-top-section {
+  background-color: white;
+  border-radius: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.post-image {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.post-image img {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  margin-right: 10px;
+}
+
+.post-image input {
+  background-color: aliceblue;
+  height: 33px;
+  width: 350px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 7px;
+  outline: none;
+  padding-left: 10px;
+}
+
+.input-image input::placeholder {
+  font-size: 13px;
+}
+
+.post-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: small;
+  color: #36454f;
+  font-weight: 500;
+}
+
+.post-options .post-icons {
+  width: 15px;
+  height: 15px;
+}
+
+.post-options .post-icon-name {
+  padding-right: 20px;
+}
+
+.post-options button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #2872f4;
+  width: 85px;
+  height: 35px;
+  border-radius: 7px;
+}
+
+.intro-right-section {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.you-might {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.you-might-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.you-might-head::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.1px;
+  background: rgba(0, 0, 0, 0.09);
+  bottom:  0;
+}
+
+.you-might-head .you-might-like-head {
+  font-size: 11px;
+  color: #36454f;
+  font-weight: 500;
+}
+
+.you-might-head .you-might-see-all a {
+  font-size: 10px;
+  color: #2872f4;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.you-might-main {
+  display: flex;
+  align-items: center;
+  padding-top: 18px;
+  margin-bottom: 8px;
+}
+
+.you-might-main img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.name-position .might-name {
+  color: #36454f;
+  font-size: medium;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.name-position .might-position {
+  color: #9c9c9d;
+  font-size: 10px;
+}
+
+.might-social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.might-social .might-social-icon {
+  color: #9c9c9d;
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+
+.you-might-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.you-might-button .button-1 {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  border: 1px solid #9c9c9d;
+  color: #9c9c9d;
+  font-weight: 550;
+  width: 100px;
+  height: 30px;
+  border-radius: 7px;
+}
+
+.you-might-button .button-2 {
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #2872f4;
+  width: 100px;
+  height: 30px;
+  border-radius: 7px;
+}
+
+.recent-event {
+  background-color: white;
+  border-radius: 12px;
+}
+
+.recent-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recent-head p {
+  font-size: 15px;
+  color: #36454f;
+  font-weight: 500;
+}
+
+.events {
+  display: flex;
+  background-color: aliceblue;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.event .event-head {
+  font-size: 15px;
+  color: #36454f;
+  font-weight: 500;
+}

@@ -6,11 +6,20 @@
   align-items: center;
   margin-left: 10px;
   margin-right: 20px;
+  margin-top: 1px;
   color: #36454F;
   cursor: pointer;
 }
 
 .aside-icon:hover {
+  background-color: #36454F;
+  color: white;
+  border-radius: 9px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.active-aside-icon {
   background-color: #36454F;
   color: white;
   border-radius: 9px;

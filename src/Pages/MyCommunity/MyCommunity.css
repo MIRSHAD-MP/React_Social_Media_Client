@@ -1,0 +1,62 @@
+.my-community {
+  padding-top: 75px;
+  padding-left: 40px;
+  padding-right: 240px;
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+.followers-head {
+  display: grid;
+  row-gap: 20px;
+}
+
+.my-community-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  background-color: white;
+  padding: 13px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.followers-button {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  border: 1px solid #9c9c9d;
+  color: #36454f;
+  font-size: 15px;
+  height: 35px;
+  border-radius: 7px;
+}
+
+.followers-button:hover {
+  cursor: pointer;
+  border: none;
+  border: 1px solid #9c9c9d;
+  color: white;
+  background-color: #2872f4;
+  font-size: 15px;
+  height: 35px;
+  border-radius: 7px;
+}
+
+.active-followers-button {
+  cursor: pointer;
+  border: none;
+  border: 1px solid #9c9c9d;
+  color: white;
+  background-color: #2872f4;
+  font-size: 15px;
+  height: 35px;
+  border-radius: 7px;
+}
+
+.users-profiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}

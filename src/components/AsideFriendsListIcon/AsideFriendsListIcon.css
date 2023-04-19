@@ -1,0 +1,27 @@
+.all-friends {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  .friends-img img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+  }
+  
+  .friends-name p {
+      font-size: 13px;
+      font-weight: 500;
+      color: #36454F;
+      padding-left: 15px;
+      padding-right: 18px;
+  }
+  
+  .friends-last-seen {
+    font-size: 8px;
+    font-weight: 450;
+    color: #9c9c9d;
+  }
