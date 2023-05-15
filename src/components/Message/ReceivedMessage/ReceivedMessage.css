@@ -1,0 +1,44 @@
+.receivedmessage-sections {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.receivedmessage-details {
+    display: flex; 
+    align-items: center;   
+}
+
+.receivedmessage-details img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.receivedmessage-details p {
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    margin-right: 10px;
+    background-color: #2872f4;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    max-width: 550px;
+}
+
+.receivedmessage-details .receivedchat-icon {
+   margin-left: 10px;
+   width: 23px;
+   height: 23px;
+}
+
+.receivedmessage-time p {
+    color:#bdc2cc;
+    font-size: 11px;
+    margin-left: 42px;
+    padding-top: 5px;
+}

@@ -1,0 +1,239 @@
+.feed {
+  padding-top: 75px;
+  padding-left: 40px;
+  padding-right: 240px;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+.feed-sections {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  column-gap: 20px;
+}
+
+.feed-section-1 {
+  display: grid;
+  grid-template-rows: 115px 1fr;
+  row-gap: 20px;
+}
+
+.feed-post {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.feed-post-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.feed-post-top img {
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
+}
+
+.feed-post-top input {
+  height: 36px;
+  width: 390px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 10px;
+  margin-left: 10px;
+  background-color: aliceblue;
+}
+
+.feed-post-bottom {
+  display: flex;
+  align-items: center;
+  width: 435px;
+  justify-content: space-between;
+}
+
+.feed-post-about {
+  display: flex;
+  flex-direction: row;
+}
+
+.feed-post-about .feed-post-icon {
+  width: 18px;
+  height: 18px;
+  color: #36454f;
+}
+
+.feed-post-about p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #36454f;
+  padding-left: 5px;
+}
+
+.feed-post-button button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #2872f4;
+  width: 75px;
+  height: 35px;
+  border-radius: 7px;
+}
+
+.feed-user-posts {
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.feed-section-2 {
+  display: grid;
+  grid-template-rows: 210px 290px;
+  row-gap: 20px;
+}
+
+.feed-you-might {
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.feed-you-might::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background: rgba(0, 0, 0, 0.09);
+  right: 0;
+  top: 40px;
+}
+
+.feed-you-might-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed-you-might-top .feed-you-might-head {
+  font-size: 14px;
+  color: #36454f;
+  font-weight: 600;
+}
+
+.feed-you-might-top .feed-you-might-link a {
+  font-size: 13px;
+  color: #2872f4;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.feed-you-might-section {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.feed-you-might-section img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+
+.feed-you-might-head .feed-name {
+  color: #36454f;
+  font-size: medium;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.feed-you-might-head .feed-position {
+  color: #9c9c9d;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.feed-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.feed-social .feed-might-social-icon {
+  color: #9c9c9d;
+  height: 17px;
+  width: 17px;
+  margin-right: 10px;
+}
+
+.feed-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feed-buttons .feed-button-1 {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  border: 1px solid #9c9c9d;
+  color: #9c9c9d;
+  font-weight: 550;
+  width: 110px;
+  height: 37px;
+  border-radius: 7px;
+}
+
+.feed-buttons .feed-button-2 {
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #2872f4;
+  width: 110px;
+  height: 37px;
+  border-radius: 7px;
+}
+
+.feed-events {
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.feed-events::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background: rgba(0, 0, 0, 0.09);
+  right: 0;
+  top: 40px;
+}
+
+.feed-event-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feed-event-top p {
+  font-size: 14px;
+  color: #36454f;
+  font-weight: 600;
+}

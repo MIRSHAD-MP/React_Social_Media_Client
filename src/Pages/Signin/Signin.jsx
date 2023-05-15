@@ -1,19 +1,19 @@
 import React, { useState } from "react";
-import "./Signin.css"
-import AltLogin from "../../components/AltLogin/AltLogin";
+import AltLogin from "../../components/LoginAndRegistration/AltLogin/AltLogin";
 import GoogleIcon from "@mui/icons-material/Google";
 import AppleIcon from "@mui/icons-material/Apple";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import LockIcon from "@mui/icons-material/Lock";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import VisibilityIcon from "@mui/icons-material/Visibility";
-import { useForm } from "react-hook-form"
-import axios from "axios"
+import { useForm } from "react-hook-form";
+import { signIn } from "../../api/index";
 import { useNavigate } from "react-router-dom";
 import { Alert, Snackbar } from "@mui/material";
+import { motion } from "framer-motion";
+import "./Signin.css";
 
 function Signin() {
-
   const navigate = useNavigate();
 
   const {
@@ -22,14 +22,14 @@ function Signin() {
     formState: { errors },
   } = useForm();
 
-  const [open,setOpen] = useState(false)
-  const [close,setClose] = useState(false)
-  const [success,setSuccess] = useState("")
-  const [error,setError] = useState("")
+  const [open, setOpen] = useState(false);
+  const [close, setClose] = useState(false);
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
 
-  function handleClose () {
-    setOpen(false)
-    setClose(false)
+  function handleClose() {
+    setOpen(false);
+    setClose(false);
   }
 
   const [isVisible, setVisible] = useState(false);
@@ -46,17 +46,18 @@ function Signin() {
     setVisible(!isVisible);
   };
 
-  async function onSubmit(userData) {
+  async function onSubmit(formData) {
     try {
-     const {data} =  await axios.post("http://localhost:3001/api/login", {
-      ...userData
-      })
-      setSuccess(data.message)
-      setOpen(true)
-      navigate("/home")
+      const { data } = await signIn(formData);
+      setSuccess(data.message);
+      const token = data.token;
+      localStorage.setItem("token", token);
+      setOpen(true);
+      navigate("/home");
     } catch (error) {
-      setError(error.response.data.message)
-      setClose(true)
+      console.log(error);
+      setError(error.response.data.message);
+      setClose(true);
     }
   }
 
@@ -80,9 +81,14 @@ function Signin() {
           <hr />
         </div>
 
-        <div className="signinform-input">
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0, ease: "easeOut" }}
+          className="signinform-input">
           <AlternateEmailIcon className="icon" />
-          <input className="signin-input"
+          <input
+            className="signin-input"
             {...register("email", {
               required: {
                 value: true,
@@ -100,11 +106,16 @@ function Signin() {
             onBlur={unFocus}
           />
           {errors.email && <p className="error">{errors.email?.message}</p>}
-        </div>
+        </motion.div>
 
-        <div className="form-input">
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.2, ease: "easeOut" }}
+          className="signinform-input">
           <LockIcon className="icon" />
-          <input className="signin-input"
+          <input
+            className="signin-input"
             {...register("password", {
               required: { value: true, message: "Password is required" },
               minLength: {
@@ -124,17 +135,22 @@ function Signin() {
               <VisibilityOffIcon style={{ fontSize: ".95rem" }} />
             )}
           </span>
-          {errors.password && <p className="error">{errors.password?.message}</p>}
-        </div>
+          {errors.password && (
+            <p className="error">{errors.password?.message}</p>
+          )}
+        </motion.div>
 
         <div className="signinforgot">
-            <p onClick={() => {
-              navigate("/forgot-password")
-            }}>Forgot Password?</p>
+          <p
+            onClick={() => {
+              navigate("/forgot-password");
+            }}>
+            Forgot Password?
+          </p>
         </div>
 
         <button type="submit" className="signin">
-          Sign up
+          Sign in
         </button>
 
         <Snackbar open={open} autoHideDuration={4000} onClose={handleClose}>
@@ -147,19 +163,20 @@ function Signin() {
         </Snackbar>
 
         <Snackbar open={close} autoHideDuration={4000} onClose={handleClose}>
-          <Alert
-            onClose={handleClose}
-            severity="error"
-            sx={{ width: "100%" }}>
+          <Alert onClose={handleClose} severity="error" sx={{ width: "100%" }}>
             {error}
           </Alert>
         </Snackbar>
 
         <div className="signinmethod">
           <p>You haven't any account?</p>
-          <button className="signinreg" onClick={() => {
-            navigate("/")
-          }}>Sign Up</button>
+          <button
+            className="signinreg"
+            onClick={() => {
+              navigate("/");
+            }}>
+            Sign Up
+          </button>
         </div>
       </form>
     </section>

@@ -1,0 +1,47 @@
+.personal-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .personal-message:hover {
+    background-color: rgb(242, 242, 242);
+    border-radius: 9px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .person-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+    object-fit: cover;
+  }
+  
+  .messager-details {
+    padding-left: 10px;
+    padding-right: 40px;
+  }
+  
+  .messager-name {
+    font-size: small;
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: #36454f;
+  }
+  
+  .messager-message {
+    font-size: 10px;
+    font-weight: 500;
+    color: #9c9c9d;
+  }
+  
+  .message-time {
+    font-size: 10px;
+    color: #9c9c9d;
+  }

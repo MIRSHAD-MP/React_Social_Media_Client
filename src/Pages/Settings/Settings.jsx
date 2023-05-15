@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./Settings.css";
-import SettingsIcon from "../../components/SettingsIcon/SettingsIcon";
+import SettingsIcon from "../../components/Settings/SettingsIcon/SettingsIcon";
 import EditProfile from "@mui/icons-material/PersonRounded";
 import Block from "@mui/icons-material/BlockRounded";
 import Password from "@mui/icons-material/GppGoodRounded";
-import EditProfiles from "../../components/EditProfile/EditProfiles";
-import Blocking from "../../components/Blocking/Blocking";
-import PasswordAndSecurity from "../../components/PasswordAndSecurity/PasswordAndSecurity";
+import EditProfiles from "../../components/Settings/EditProfile/EditProfiles";
+import Blocking from "../../components/Settings/Blocking/Blocking";
+import PasswordAndSecurity from "../../components/Settings/PasswordAndSecurity/PasswordAndSecurity";
 
 function Settings() {
   const [activePage, setActivePage] = useState("edit-profile");

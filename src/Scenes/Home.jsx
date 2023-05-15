@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
-import Aside from "../components/Aside/Aside";
+import Aside from "../components/Others/Aside/Aside";
 import "./Home.css";
 
 function Home() {

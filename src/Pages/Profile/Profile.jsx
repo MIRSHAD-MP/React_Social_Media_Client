@@ -1,6 +1,5 @@
 import React from "react";
-import "./Profile.css";
-import Intro from "../../components/Intro/Intro";
+import Intro from "../../components/Profile/Intro/Intro";
 import Explore from "@mui/icons-material/PublicRounded";
 import Gender from "@mui/icons-material/Person2Rounded";
 import BirthDay from "@mui/icons-material/CakeRounded";
@@ -13,6 +12,7 @@ import Select from "@mui/icons-material/MoreHorizRounded";
 import LiveVideo from "@mui/icons-material/VideocamOutlined";
 import Photo from "@mui/icons-material/ImageOutlined";
 import Feeling from "@mui/icons-material/SentimentSatisfiedOutlined";
+import "./Profile.css";
 
 function Profile() {
   return (

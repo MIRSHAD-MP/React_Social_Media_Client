@@ -1,8 +1,8 @@
 import React from "react";
-import AsideFriendsList from "../../components/AsideFriendsList/AsideFriendsList";
+import AsideFriendsList from "../../components/Others/AsideFriendsList/AsideFriendsList";
 import Settings from "@mui/icons-material/Settings";
 import Follow from "@mui/icons-material/AccountCircleRounded";
-import NotificationList from "../../components/NotificationList/NotificationList";
+import NotificationList from "../../components/Notification/NotificationList/NotificationList";
 import MIRSHAD from "../../Assets/MIRSHAD.jpeg";
 import "./Notification.css";
 

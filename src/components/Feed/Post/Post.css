@@ -1,0 +1,155 @@
+.feed-user-post-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .feed-post-user-details {
+    display: flex;
+  }
+  
+  .feed-post-user-details img {
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+    margin-right: 10px;
+  }
+  
+  .feed-post-user .feed-post-user-name {
+    color: #36454f;
+    font-size: medium;
+    font-weight: 500;
+    padding-bottom: 5px;
+  }
+  
+  .feed-post-user .feed-post-user-date {
+    color: #9c9c9d;
+    font-size: 10px;
+  }
+  
+  .feed-post-description p {
+    padding-top: 20px;
+    font-size: 13px;
+    color: #36454f;
+  }
+  
+  .feed-post-image img {
+    padding-top: 20px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .feed-post-like {
+    display: flex;
+    justify-content: end;
+    position: relative;
+  }
+  
+  .feed-post-like::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    background: rgba(0, 0, 0, 0.09);
+    bottom: -10px;
+  }
+  
+  .feed-about-image {
+    padding-top: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #9c9c9d;
+    padding-left: 10px;
+  }
+  
+  .feed-like-section {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .feed-like-section::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    background: rgba(0, 0, 0, 0.09);
+    bottom: -10px;
+  }
+  
+  .feed-likes {
+    display: flex;
+    align-items: center;
+  }
+  
+  .feed-likes .likes-icons {
+    height: 15px;
+    width: 15px;
+  }
+  
+  .feed-likes p {
+    font-size: 13px;
+    padding-left: 10px;
+  }
+  
+  .feed-post-comments {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+    padding-top: 15px;
+  }
+  
+  .feed-post-user-img img {
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+  }
+  
+  .feed-post-comments-input {
+    position: relative;
+  }
+  
+  .feed-post-comments-input input {
+    height: 36px;
+    width: 350px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    margin-left: 10px;
+    background-color: aliceblue;
+  }
+  
+  .feed-emoji {
+    position: absolute;
+    color: #9c9c9d;
+    bottom: 3.5px;
+    right: 15px;
+  }
+  
+  .feed-emoji .feed-emoji-icon {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .feed-posts-send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7f0ff;
+    border-radius: 4px;
+    width: 42px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  
+  .feed-posts-send .feed-post-send-icon {
+    color: #2872f4;
+    width: 22px;
+    height: 22px;
+  }
+  

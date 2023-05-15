@@ -1,0 +1,21 @@
+.otp-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otp-input input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import AsideFriendsList from "../../components/AsideFriendsList/AsideFriendsList";
+import AsideFriendsList from "../../components/Others/AsideFriendsList/AsideFriendsList";
 import Explore from "@mui/icons-material/PublicRounded";
 import Facebook from "@mui/icons-material/Facebook";
 import Twitter from "@mui/icons-material/Twitter";
 import Instagram from "@mui/icons-material/Instagram";
 import MIRSHAD from "../../Assets/MIRSHAD.jpeg";
-import Followers from "../../components/Followers/Followers";
-import Following from "../../components/Following/Following";
-import PeopleYouMightLike from "../../components/PeopleYouMightLike/PeopleYouMightLike";
+import Followers from "../../components/MyCommunity/Followers/Followers";
+import Following from "../../components/MyCommunity/Following/Following";
+import PeopleYouMightLike from "../../components/MyCommunity/PeopleYouMightLike/PeopleYouMightLike";
 import "./MyCommunity.css";
 
 function MyCommunity() {

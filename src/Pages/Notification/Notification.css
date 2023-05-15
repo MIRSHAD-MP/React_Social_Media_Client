@@ -25,17 +25,6 @@
   position: relative;
 }
 
-.notification-head p {
-  color: #36454f;
-  font-size: medium;
-  font-weight: 500;
-}
-
-.notification-settings {
-  color: #36454f;
-
-}
-
 .notification-head::after {
   position: absolute;
   content: "";
@@ -44,4 +33,14 @@
   background: rgba(0, 0, 0, 0.09);
   right: 0;
   bottom:0;
+}
+
+.notification-head p {
+  color: #36454f;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.notification-settings {
+  color: #36454f;
 }
